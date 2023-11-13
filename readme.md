@@ -32,7 +32,7 @@ To add a new page, follow these steps:
 1. Create a new HTML file in the `src/pages` folder.
 2. Create a corresponding controller file in the `src/controllers` folder.
 3. Import the new controller in the `src/controllers/index.controller.js` file.
-4. Update the src/router/index.routes.js file to include the new route.
+4. Update the `src/router/index.routes.js` file to include the new route.
 5. Customize the content of the new HTML file.
 
 ## Contributing
