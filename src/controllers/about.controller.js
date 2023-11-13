@@ -1,4 +1,4 @@
-import view from '../pages/home.html'
+import view from '../pages/about.html'
 
 export default () => {
   const sectionElement = document.createElement('section')

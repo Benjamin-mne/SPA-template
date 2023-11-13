@@ -1,8 +1,8 @@
-import view from '../views/notFound.html'
+import view from '../pages/notFound.html'
 
 export default () => {
-  const divElement = document.createElement('div')
-  divElement.innerHTML = view
+  const sectionElement = document.createElement('section')
+  sectionElement.innerHTML = view
 
-  return divElement
+  return sectionElement
 }

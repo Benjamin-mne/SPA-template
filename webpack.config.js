@@ -1,7 +1,7 @@
 import path from 'node:path'
 import HTMLWebpackPlugin from 'html-webpack-plugin'
 
-const config = {
+export default {
   entry: './src/main.js',
   output: {
     path: path.resolve(process.cwd(), 'dist'),
@@ -14,8 +14,15 @@ const config = {
         loader: 'html-loader'
       },
       {
-        test: /.css$/i,
+        test: /\.css$/i,
         use: ['style-loader', 'css-loader']
+      },
+      {
+        test: /\.js?$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader'
+        }
       }
     ]
   },
@@ -24,7 +31,4 @@ const config = {
       template: './src/index.html'
     })
   ]
-
 }
-
-export default config

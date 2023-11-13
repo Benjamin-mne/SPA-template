@@ -8,6 +8,9 @@ export const router = (route) => {
     case '#/':
       return content.appendChild(pages.home())
 
+    case '#/about':
+      return content.appendChild(pages.about())
+
     default:
       return content.appendChild(pages.notFound())
   }
